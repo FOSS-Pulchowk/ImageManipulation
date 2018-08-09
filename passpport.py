@@ -6,7 +6,7 @@ import os
 import sys
 from PIL import Image
 
-os.chdir('E:\\KADA\python_learn\project24\ImageManipulation')
+os.chdir('E:\\KADA\python_learn\project24\ImageManipulator')
 filename = sys.argv[1]
 bg_im = Image.new('RGB', (1200, 1800), 'white')
 width, height = bg_im.size
