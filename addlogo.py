@@ -28,3 +28,5 @@ for filename in os.listdir('.'):
 
     image.save(os.path.join('withLogo', 'withlogo' + filename))
     print('Logo added to %s' % (filename))
+
+print('Logo has been succesfully added to all images')
