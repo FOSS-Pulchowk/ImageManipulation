@@ -6,10 +6,6 @@ import os
 import sys
 from PIL import Image, ImageDraw
 
-WORKING_DIRECTORY = 'E:\\KADA\python_learn\project24\ImageManipulator'
-
-# open the directory that contais the photos
-os.chdir(WORKING_DIRECTORY)
 filename = sys.argv[1]
 bg_im = Image.new('RGB', (1200, 1800), 'white')
 width, height = bg_im.size
