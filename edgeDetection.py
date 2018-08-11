@@ -104,5 +104,5 @@ for i in range(1, width - 1):
         # Draw gradient i edge image
         im1.putpixel((i, j), (G, G, G))
 
-im1.save('edge ' + filename)
 print('Edge detection completed')
+im1.save('edge ' + filename)
