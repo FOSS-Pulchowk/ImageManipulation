@@ -1,6 +1,9 @@
-# this script can make a 1200x1800px photo
+# this script can make a 4x6 inches photo
 # with the required passport size photos
-# that can be printed
+# that can be printed in .jpg file format
+
+# to run this script in command line, use the format:
+# python [destination folder\passport.py] [photo_file.jpg]
 
 import os
 import sys

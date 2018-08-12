@@ -1,6 +1,9 @@
 # this is a python implementetion of the sobel algorithm
 # for edge detection in digital image processing
 
+# to run this script in command line, use the format:
+# python [destination folder\edgeDetection.py] [photo_file.jpg]
+
 import sys
 from PIL import Image
 import math

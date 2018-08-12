@@ -1,5 +1,9 @@
 # this is a python implementation of Median Filter for the
 # removal of Salt and Pepper noise in an image
+
+# to run this script in command line, use the format:
+# python [destination folder\medianFilter.py] [photo_file.jpg]
+
 import sys
 from PIL import Image
 
@@ -26,7 +30,7 @@ for i in range(1, width - 1):
         neighbours[8] = image.getpixel((i + 1, j + 1))
 
         neighbours.sort()
-
+        # takes the median value of the neighbour pixels and replaces the (i,j) pixel with the median value
         newIm.putpixel((i, j), (neighbours[4]))
 
 print('Noise removed')
