@@ -1,5 +1,8 @@
 # adds logos to all the photos in the working directory and save them in a new folder
 
+# to run this script in command line, use the format:
+# python [destination folder\addlogo.py]
+
 import os
 from PIL import Image
 
@@ -28,3 +31,5 @@ for filename in os.listdir('.'):
 
     image.save(os.path.join('withLogo', 'withlogo' + filename))
     print('Logo added to %s' % (filename))
+
+print('Logo has been succesfully added to all images')

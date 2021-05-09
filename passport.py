@@ -1,15 +1,14 @@
-# this script can make a 1200x1800px photo
+# this script can make a 4x6 inches photo
 # with the required passport size photos
-# that can be printed
+# that can be printed in .jpg file format
+
+# to run this script in command line, use the format:
+# python [destination folder\passport.py] [photo_file.jpg]
 
 import os
 import sys
 from PIL import Image, ImageDraw
 
-WORKING_DIRECTORY = 'E:\\KADA\python_learn\project24\ImageManipulator'
-
-# open the directory that contais the photos
-os.chdir(WORKING_DIRECTORY)
 filename = sys.argv[1]
 bg_im = Image.new('RGB', (1200, 1800), 'white')
 width, height = bg_im.size
